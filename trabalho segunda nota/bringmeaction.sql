@@ -1,4 +1,5 @@
 create database bringmeaction
+create database outro
 create table teste(
 ID integer primary key identity,
 nome varchar (50)
@@ -21,3 +22,6 @@ end
 select * from teste
 
 select * from sys.sql_logins
+
+grant select on teste to vixe;
+use bringmeaction
